@@ -18,6 +18,7 @@ public class accueil extends JFrame implements ActionListener {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		pan.setLayout(null);
+		fond.setBounds(0, 0, 800, 800);
 		pan.add(fond);
 		
 		this.setContentPane(pan);
