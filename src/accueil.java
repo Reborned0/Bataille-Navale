@@ -19,6 +19,9 @@ public class accueil extends JFrame implements ActionListener {
 		
 		pan.setLayout(null);
 		pan.add(fond);
+		
+		this.setContentPane(pan);
+		this.setVisible(true);
 	}
 
 	
