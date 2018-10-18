@@ -7,8 +7,8 @@ public class jeu extends JFrame implements ActionListener {
 	private JPanel pan = new JPanel();
 	private JPanel panHost = new JPanel();
 	private JPanel panClient = new JPanel();
-	private JLabel[][] tabHost = new JLabel[16][16];
-	private JLabel[][] tabClient = new JLabel[16][16];
+	private JButton[][] tabHost = new JButton[16][16];
+	private JButton[][] tabClient = new JButton[16][16];
 	private GridLayout batailleNavale = new GridLayout(16, 16);
 	private ImageIcon bleu = new ImageIcon("images/bleu.jpg");
 	private ImageIcon violet = new ImageIcon("images/violet.jpg");
@@ -34,14 +34,16 @@ public class jeu extends JFrame implements ActionListener {
 		for(int i=0;i<16;i++){
 			for (int j=0;j<16;j++){
 				JButton button = new JButton(bleu);
-				panHost.add(button);
+				tabHost[i][j] = button;
+				//panHost.add(button);
 			}
 		}
 		
 		for(int i=0;i<16;i++){
 			for (int j=0;j<16;j++){
 				JButton button = new JButton(violet);
-				panClient.add(button);
+				tabClient[i][j] = button;
+				//panClient.add(button);
 			}
 		}
 		
