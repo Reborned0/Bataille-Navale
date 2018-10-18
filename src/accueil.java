@@ -27,7 +27,6 @@ public class accueil extends JFrame implements ActionListener {
 
 	
 	public void actionPerformed(ActionEvent e) {
-		// TODO Stub de la méthode généré automatiquement
 		
 	}
 }
