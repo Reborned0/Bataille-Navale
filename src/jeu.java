@@ -35,7 +35,7 @@ public class jeu extends JFrame implements ActionListener {
 			for (int j=0;j<16;j++){
 				JButton button = new JButton(bleu);
 				tabHost[i][j] = button;
-				//panHost.add(button);
+				panHost.add(button);
 			}
 		}
 		
@@ -43,7 +43,7 @@ public class jeu extends JFrame implements ActionListener {
 			for (int j=0;j<16;j++){
 				JButton button = new JButton(violet);
 				tabClient[i][j] = button;
-				//panClient.add(button);
+				panClient.add(button);
 			}
 		}
 		
