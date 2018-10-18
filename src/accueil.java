@@ -9,6 +9,7 @@ public class accueil extends JFrame implements ActionListener {
 	private JButton regle = new JButton("Règles");
 	private ImageIcon image = new ImageIcon("images/fondAccueil.jpg");
 	private JLabel fond = new JLabel(image,JLabel.CENTER);
+	private Font comic = new Font("Comic sans MS",Font.BOLD,18);
 	
 	public accueil() {
 		
@@ -19,6 +20,19 @@ public class accueil extends JFrame implements ActionListener {
 		
 		pan.setLayout(null);
 		fond.setBounds(0, 0, 800, 800);
+		
+		jouer.setFont(comic);
+		jouer.setBackground(Color.gray);
+		jouer.setBounds(300, 250, 200, 100);
+		jouer.addActionListener(this);
+		
+		regle.setFont(comic);
+		regle.setBackground(Color.gray);
+		regle.setBounds(300, 450, 200, 100);
+		regle.addActionListener(this);
+		
+		pan.add(jouer);
+		pan.add(regle);
 		pan.add(fond);
 		
 		this.setContentPane(pan);
@@ -27,7 +41,10 @@ public class accueil extends JFrame implements ActionListener {
 
 	
 	public void actionPerformed(ActionEvent e) {
-		// TODO Stub de la méthode généré automatiquement
+		if (e.getSource()== jouer){
+			this.setVisible(false);
+			jeu f2 = new jeu();
+		}
 		
 	}
 }
