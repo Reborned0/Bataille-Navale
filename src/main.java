@@ -22,8 +22,9 @@ public class main {
 	      System.out.println("Serveur initialisé.");
 	      
 	      for(int i = 0; i < 5; i++){
-	         Thread t = new Thread(new Client(host, port));
-	         t.start();
+	        // Thread t = new Thread(new Client(host, port));
+	         //t.start();
+	      }
 	}
 
 }
