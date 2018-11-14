@@ -39,7 +39,6 @@ public class accueil extends JFrame implements ActionListener {
 		this.setContentPane(pan);
 		this.setVisible(true);
 		jouer.setVisible(true);
-		jouer.setBounds(0, 0, 20, 20);
 	}
 
 	
