@@ -41,10 +41,12 @@ public class accueil extends JFrame implements ActionListener {
 
 	
 	public void actionPerformed(ActionEvent e) {
+
 		if (e.getSource()== jouer){
 			this.setVisible(false);
 			jeu f2 = new jeu();
 		}
+
 		
 	}
 }
