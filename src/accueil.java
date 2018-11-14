@@ -1,3 +1,4 @@
+import javax.print.attribute.standard.JobOriginatingUserName;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -23,10 +24,13 @@ public class accueil extends JFrame implements ActionListener {
 		
 		this.setContentPane(pan);
 		this.setVisible(true);
+		jouer.setVisible(true);
+		jouer.setBounds(0, 0, 20, 20);
 	}
 
 	
 	public void actionPerformed(ActionEvent e) {
+
 		
 	}
 }
